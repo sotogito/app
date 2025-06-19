@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <ul th:object="${menu}">
+    <li th:text="|메뉴번호: *{menuCode}|"></li>
+    <li th:text="|메뉴명: *{menuName}|"></li>
+    <li th:text="|메뉴가격: *{menuPrice}|"></li>
+    <li th:text="|카테고리번호: *{categoryCode}|"></li>
+    <li th:text="|주문가능여부: *{orderableStatus}|"></li>
+  </ul>
+</body>
+</html>
